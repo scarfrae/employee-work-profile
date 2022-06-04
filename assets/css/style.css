@@ -1,0 +1,23 @@
+:root {
+    /*var*/
+    --blue: rgb(66, 66, 223);
+    --green: rgb(29, 197, 27);
+    --red: red; 
+}
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    padding: 50px;
+    justify-content: space-between;
+    background: var(--red);
+    color: white;
+    font-size: 30px;
+}
+h1 {
+    background-color: var(--red);
+
+}
