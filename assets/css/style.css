@@ -12,7 +12,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1%;
+    padding: 1rem;
     background: var(--green);
     color: var(--white);
     font-size: 1.5rem;
@@ -51,7 +51,38 @@ header h1 {
     /*when hovering over underline*/
     text-decoration: underline;
 }
+main {
+    background: blue;
+    /*allows for other flex properties*/
+    display: flex;
+    /*flex-wrap used so everything is on page no matter screen size */
+    flex-wrap: wrap;
+}
 
+.container {
+    flex: 1 0 33%;
+    padding: 10px;
+}
+
+.container-inner {
+    background: red;
+    color: white;
+    padding: 1rem;
+}
+/*use media queries to display content on page based on screen size*/
+@media screen and (max-width: 991px) {
+    .container {
+        /*when tablet size image size stays same*/
+        flex-basis: 50%;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .container {
+        /*when tablet size image size stays same*/
+        flex-basis: 100%;
+    }
+}
 /* footer {
     display: flex;
     justify-content: space-between;
@@ -68,3 +99,8 @@ header h1 {
 .navbar-foot {
     background-color: var(--green);
 } */
+
+footer {
+    background: var(--green);
+    padding: 1rem;
+}
