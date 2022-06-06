@@ -5,7 +5,10 @@
     --black: rgba(0, 0, 0, 0.84);
 }
 body {
-    font-family:inherit;
+    font-family:sans-serif;
+    display: flex;
+    flex-direction: column;
+    line-height: 150%;
 }
 header {
     display: flex;
@@ -14,7 +17,12 @@ header {
     padding: 1%;
     background: var(--black);
     color: var(--white);
-    font-size: 1.5rem;
+}
+
+header h1 {
+    /* background-color: rgb(19, 93, 97); */
+    justify-content: flex-start; 
+    font-size: 200%;
 }
 
 /* nav{
@@ -32,34 +40,66 @@ header {
     display: inline-block;
     padding: 20px;
 }
-header h1 {
-    background-color: rgb(19, 93, 97);
-    justify-content: flex-start;
-    font-size: 200%;
-    border-style: solid;
-}
 
 .navbar-head a {
     /*specifications for navbar selector*/
     color: white;
     font-weight: bold;
     text-decoration: none;
+    border-radius: 10px;
 
 }
 /*navbar modications */
 .navbar-head a:hover {
     /*when hovering over underline*/
     text-decoration: underline;
+    display: block;
+    background-color: rgb(133, 144, 109);
+}
+
+.banner {
+   background-image:
+   url(https://sanjuan.objects.liquidweb.services/photos/82505-agritourism-farms-vineyards-etc-farms-barns-lopez-island-farms-jones-family-farms-jones_fam_14hd34-1200x630.jpg);
+   padding: 40px;
+}
+
+.banner h1 {
+    /* want to get welcome to my work profile at end*/
+    display: flex-end;
 }
 main {
-    background:  rgb(19, 93, 97);
+    background: rgb(133, 144, 109);
     /*allows for other flex properties*/
     display: flex;
     /*flex-wrap used so everything is on page no matter screen size */
     flex-wrap: wrap;
+    color: white;
 
 }
+/*Need to fix*/
 .section-one {
+    background-color: rgb(133, 144, 109);
+    /* justify-content: space-between; */
+    font-size: 150%;
+    /* border-style: solid; */
+    align-items: center;
+    padding: 1%;
+    margin-left: 4%;
+    margin-right: 4%;
+}
+
+.section-one h1 {
+    background-color: rgb(133, 144, 109);
+    justify-content: flex-start;
+    font-size: 150%;
+    /* border-style: solid; */
+}
+
+.section-one p {
+    justify-content: space-between;
+    text-align: center;
+    display: inline;
+
 }
 
 .container {
