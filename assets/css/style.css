@@ -1,23 +1,27 @@
 :root {
     /*var*/
-    --blue: rgb(66, 66, 223);
-    --green: rgb(29, 197, 27);
-    --red: red; 
+    --green: rgb(13, 87, 36);
+    --white: white;
 }
+/*body {
+    display: flex;
 
+} 
+*/
 header {
     display: flex;
-    justify-content: space-between; 
-    padding: 2rem;
-    background: var(--red);
-    color: white;
-    font-size: 2rem;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+    background: var(--green);
+    color: var(--white);
+    font-size: 1.5rem;
 }
 
 /* nav{
     display: flex;
 } */
-.navbar{
+.navbar-head{
     list-style-type: none;
     justify-content: flex-end;
     margin: 0;
@@ -25,12 +29,42 @@ header {
     text-align: center;
     /*font*/
 }
-.navbar li{
+.navbar-head li{
     display: inline-block;
     padding: 20px;
 }
-h1 {
-    background-color: var(--red);
+header h1 {
+    background-color: var(--green);
     justify-content: flex-start;
+    font-size: 200%;
+}
+
+.navbar-head a {
+    /*specifications for navbar selector*/
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
 
 }
+/*navbar modications */
+.navbar-head a:hover {
+    /*when hovering over underline*/
+    text-decoration: underline;
+}
+
+/* footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 1%;
+    font-size: 125%;
+} */
+
+/* footer h1 {
+    background-color:rgb(13, 87, 36)
+}
+
+.navbar-foot {
+    background-color: var(--green);
+} */
