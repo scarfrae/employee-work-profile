@@ -4,20 +4,33 @@
     --green: rgb(29, 197, 27);
     --red: red; 
 }
-body {
-    display: flex;
-    flex-direction: column;
-}
 
 header {
     display: flex;
-    padding: 50px;
-    justify-content: space-between;
+    justify-content: space-between; 
+    padding: 2rem;
     background: var(--red);
     color: white;
-    font-size: 30px;
+    font-size: 2rem;
+}
+
+/* nav{
+    display: flex;
+} */
+.navbar{
+    list-style-type: none;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    /*font*/
+}
+.navbar li{
+    display: inline-block;
+    padding: 20px;
 }
 h1 {
     background-color: var(--red);
+    justify-content: flex-start;
 
 }
