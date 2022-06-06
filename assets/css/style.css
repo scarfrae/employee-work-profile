@@ -59,6 +59,8 @@ main {
     flex-wrap: wrap;
 
 }
+.section-one {
+}
 
 .container {
     flex: 1 0 33%;
