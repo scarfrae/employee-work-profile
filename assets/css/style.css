@@ -10,6 +10,8 @@ body {
     display: flex;
     flex-direction: column;
     line-height: 150%;
+    max-width: 100%;
+    max-height: 100%;
 }
 header {
     display: flex;
@@ -22,16 +24,13 @@ header {
 
 header h1 {
     /* background-color: rgb(19, 93, 97); */
-    justify-content: flex-start; 
+    /* justify-content: flex-end;  */
     font-size: 200%;
     /* background-color:rgb(13, 87, 36); */
     /* padding: 2px; */
 
 }
 
-/* nav{
-    display: flex;
-} */
 .navbar-head{
     list-style-type: none;
     justify-content: space-between;
@@ -65,14 +64,17 @@ header h1 {
    background-image:
    url(https://sanjuan.objects.liquidweb.services/photos/82505-agritourism-farms-vineyards-etc-farms-barns-lopez-island-farms-jones-family-farms-jones_fam_14hd34-1200x630.jpg);
    padding: 40px;
+   display: flex;
+   justify-content: flex-end;
+   /*look up background no repeat so image doesn't repeat*/
 }
 
 .banner h1 {
     /* want to get welcome to my work profile at end
     display: flex-end; */
-    /* background-color: rgba(0, 0, 0, 0.84);
+    background-color: rgba(0, 0, 0, 0.84);
     border-style: groove;
-    margin-left: inherit; */
+    margin-left: inherit; 
     color: white
 }
 main {
@@ -86,11 +88,7 @@ main {
 }
 /*Need to fix*/
 .section-one {
-    display: flex;
     background-color: rgb(133, 144, 109);
-    /* justify-content: space-between; */
-    /* border-style: solid; */
-    /* align-items: center; */
     padding: 1%;
     margin: 2% 4% 1%;
     display: flex;
@@ -100,7 +98,7 @@ main {
 
 .section-one h1 {
     background-color: rgb(133, 144, 109);
-    justify-content: flex-start;
+    /* justify-content: flex-end; */
     font-size: 150%;
     border-style: solid;
     padding: 2%;
@@ -113,39 +111,123 @@ main {
 
 .section-one p {
     /* justify-content: flex-end;; */
+    /*need to make paragraphs one after another */
     text-align: center;
     padding: 2%;
     /* display: inline; */
 
 }
+/* br {
+    line-height: 150%;
+} */
+.section-two {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(133, 144, 109);
+    /* justify-content: space-between; */
+    /* border-style: solid; */
+    /* align-items: center; */
+    padding: 1%;
+    margin: 2% 4% 1%;
+}
 
+.section-two h1 {
+    background-color: rgb(133, 144, 109);
+    /* justify-content: flex-end; */
+    font-size: 150%;
+    border-style: solid;
+    padding: 2% 3%;
+}
 
 .container {
     flex: 1 0 33%;
-    padding: 10px;
+    padding: 5px;
+    margin-bottom: 1%;
+    position: relative;
 }
 
 .container-inner {
-    background: rgb(133, 144, 109);
+    background: rgb(124, 109, 144);
+    /* border-style: groove; */
+    display: flex column; 
+    position: absolute;
+    top: 50px;
+    
+
+    /* justify-content: flex-start; */
     color: white;
-    padding: 1rem;
-    border-style: solid;
+    /* padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    border-right-width: 100px;
+    line-height: 0.5; */
+
+    /* border-style: solid; */
     /* border-width: 1px; */
+}
+.surf-report {
+    border: white groove 10px;
+    height:40%;
+    width: auto;
+}
+.container-inner h1 {
+    border: white solid 10px;
+    background-color: aliceblue;
 }
 
 .container-inner img {
     width: 100%;
 }
 
+.section-three {
+    display: flex;
+    background-color: rgb(133, 144, 109);
+    /* justify-content: space-between; */
+    /* border-style: solid; */
+    /* align-items: center; */
+    padding: 1%;
+    margin: 2% 4% 1%;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+
+.section-three h1 {
+    background-color: rgb(133, 144, 109);
+    /* justify-content: flex-end; */
+    font-size: 150%;
+    border-style: solid;
+    padding: 2% 3%;
+}
+
+.navbar-s3{
+    list-style-type: none;
+    justify-content: space-between;
+    /* margin: 0;
+    padding: 0; */
+    text-align: center;
+    /*font*/
+}
+.navbar-s3 li{
+    display: inline-block;
+    padding: 20px;
+}
+
+.navbar-s3 a {
+    /*specifications for navbar selector*/
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 10px;
+}
 /*use media queries to display content on page based on screen size*/
 @media screen and (max-width: 991px) {
     .container {
         /*when tablet size image size stays same*/
         flex-basis: 50%;
     }
-    .banner h1 {
+    /* .banner h1 {
         margin-left: 500px;
-    }
+    } */
 }
 
 @media screen and (max-width: 575px) {
@@ -153,7 +235,11 @@ main {
         /*when tablet size image size stays same*/
         flex-basis: 100%;
     }
+    .banner {
+        justify-content: center;
+    }
 }
+
 /* footer {
     display: flex;
     justify-content: space-between;
@@ -173,5 +259,5 @@ main {
 
 footer {
     background: var(--black);
-    padding: 1rem;
+    padding: 2rem;
 }
