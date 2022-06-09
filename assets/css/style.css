@@ -24,6 +24,10 @@ header h1 {
     /* background-color: rgb(19, 93, 97); */
     /* justify-content: flex-end;  */
     font-size: 200%;
+    background-color: rgb(133, 144, 109);
+    /* justify-content: flex-end; */
+    border-style: solid;
+    padding: 2%;
     /* background-color:rgb(13, 87, 36); */
     /* padding: 2px; */
 
@@ -86,13 +90,15 @@ main {
 }
 /*Need to fix*/
 .section-one {
+    display: flex;
     background-color: rgb(133, 144, 109);
     padding: 1%;
     margin: 2% 4% 1%;
-    display: flex;
+    /* display: flex; */
     /* justify-content: space-between; */
 
 }
+
 
 .section-one h1 {
     background-color: rgb(133, 144, 109);
@@ -163,14 +169,20 @@ main {
     position: absolute;
     top: 50px;
     color: white;
+
 }
 .surf-report {
     border: white groove 10px;
     height:400px;
+
 }
 .container-inner h1 {
     border: white solid 10px;
     background-color: aliceblue;
+}
+
+.container-inner a {
+    text-decoration: none;
 }
 
 /* .container-inner img {
@@ -194,7 +206,7 @@ main {
     /* justify-content: flex-end; */
     font-size: 150%;
     border-style: solid;
-    padding: 2% 
+    padding: 2%;
 }
 
 .navbar-s3{
@@ -217,15 +229,21 @@ main {
     text-decoration: none;
     border-radius: 10px;
 }
+
+.navbar-s3 a:hover {
+    text-decoration: underline;
+    display: block;
+    background-color: rgb(133, 144, 109);
+}
 /*use media queries to display content on page based on screen size*/
 @media screen and (max-width: 991px) {
     .container {
         /*when tablet size image size stays same*/
         flex-basis: 50%;
     }
-    /* .banner h1 {
-        margin-left: 500px;
-    } */
+    header h1 {
+        font-size: 150%;
+    }
 }
 
 @media screen and (max-width: 575px) {
